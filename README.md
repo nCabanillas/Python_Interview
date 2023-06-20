@@ -1,5 +1,5 @@
 # Ejercicios de entrevistas
-En este repo encontraras un listado de ejercicios comunes que se toman en entrevistas con sus implementaciones
+En este repo encontraras un listado de ejercicios comunes que se toman en entrevistas con sus implementaciones.
 
 ## Enunciados
 
