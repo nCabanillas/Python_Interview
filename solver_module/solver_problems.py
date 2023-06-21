@@ -102,3 +102,6 @@ class solve_problems:
     @beginner_decorator('PROBLEMA 8')
     def problem_8():
         from .function.func import gen_n_caracteres
+        num = int(input('Ingrese el número de veces que se repetirá el carácter:'))
+        char = input('Ingrese el carácter a repetir:')
+        print(f'\nEl resultado de repetir {num} veces el carácter {char} es: {gen_n_caracteres(num,char)}\n')
