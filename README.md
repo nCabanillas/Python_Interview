@@ -28,5 +28,5 @@ y devuelva el mayor de ellos.
 ## Ejecución(Execution)
 
 1. You must have installed Python 3.10.x on your PC.
-2. Make sure to have Python installed and run main.py and  :
+2. Make sure to have Python installed and run main.py:
    - python main.py
