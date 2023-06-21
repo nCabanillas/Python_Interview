@@ -24,3 +24,9 @@ y devuelva el mayor de ellos.
 8. Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx".
 
 9. Definir un histograma procedimiento() que tome una lista de números enteros e imprima un histograma en la pantalla. Ejemplo: procedimiento([4, 9, 7]) debería imprimir lo siguiente:
+
+## Ejecución(Execution)
+
+1. You must have installed Python 3.10.x on your PC.
+2. Make sure to have Python installed and run main.py:
+   - python main.py
