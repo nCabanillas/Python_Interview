@@ -78,15 +78,26 @@ class solve_problems:
         word = input('Ingrese la palabra a analizar:')
         try:
             if is_palindrome(word):
-                print(f'\nLa palabra {word} es palindrome\n')
+                print(f'\nLa palabra {word} es palindrome. {is_palindrome(word)}\n')
             else:
-                print(f'\nLa palabra {word} no es palindrome\n')
+                print(f'\nLa palabra {word} no es palindrome. {is_palindrome(word)}\n')
         except Exception as e:
             print(f'\nOcurrió el siguiente error ==> {e}\n')
 
     @beginner_decorator('PROBLEMA 7')
     def problem_7():
-        from .function.func import superposition    
+        from .function.func import superposition
+        # first way
+        print('Ingrese los elementos de la primera lista:')
+        list1 = list(map(lambda x: int(x),get_multiple_inputs()))
+        # second way
+        print('Ingrese los elementos de la segunda lista:')
+        list2 = get_multiple_inputs()   
+        list2 = [int(x) for x in list2]
+        # getting the result
+        result = superposition(list1,list2)
+        print(f'\nLas listas {list1} y {list2} tienen elementos en común? Respuesta: {result}\n')
+        
 
     @beginner_decorator('PROBLEMA 8')
     def problem_8():

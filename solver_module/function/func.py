@@ -41,7 +41,7 @@ def superposition(string1: str,string2: str):
             return True
     return False
 
-def gen_n_caracteres(num:int, string:str):
+def gen_n_caracteres(num:int, string:str) -> str:
     return string * num
 
 def beginner_decorator(message:str):

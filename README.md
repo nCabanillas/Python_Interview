@@ -25,7 +25,7 @@ y devuelva el mayor de ellos.
 
 9. Definir un histograma procedimiento() que tome una lista de números enteros e imprima un histograma en la pantalla. Ejemplo: procedimiento([4, 9, 7]) debería imprimir lo siguiente:
 
-## Ejecución(Execution)
+## Ejecución
 
 1. You must have installed Python 3.10.x on your PC.
 2. Make sure to have Python installed and run main.py:
