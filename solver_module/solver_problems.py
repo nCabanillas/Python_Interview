@@ -58,21 +58,36 @@ class solve_problems:
             return None
         print(f'\nLa suma de los valores {inputs} ingresados es: {sum(*inputs)}\n')
         print(f'La multiplicación de los valores {inputs} ingresados es: {multi(*inputs)}\n')
-        
-        
 
     @beginner_decorator('PROBLEMA 5')
     def problem_5():
         from .function.func import multi
+        from .function.func import inverse
+        word = input('Ingrese la palabra a invertir:')
+        try:
+            inverse_word = inverse(word)
+        except Exception as e:
+            print(f'\nOcurrió el siguiente error ==> {e}\n')
+        else:
+            print(f'\nLa palabra {word} invertida es {inverse_word}\n')
 
     @beginner_decorator('PROBLEMA 6')
     def problem_6():
         from .function.func import inverse
+        from .function.func import is_palindrome
+        word = input('Ingrese la palabra a analizar:')
+        try:
+            if is_palindrome(word):
+                print(f'\nLa palabra {word} es palindrome\n')
+            else:
+                print(f'\nLa palabra {word} no es palindrome\n')
+        except Exception as e:
+            print(f'\nOcurrió el siguiente error ==> {e}\n')
 
     @beginner_decorator('PROBLEMA 7')
     def problem_7():
-        from .function.func import is_palindrome
+        from .function.func import superposition    
 
     @beginner_decorator('PROBLEMA 8')
     def problem_8():
-        from .function.func import superposition
+        from .function.func import gen_n_caracteres
