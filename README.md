@@ -3,10 +3,14 @@ En este repo encontraras un listado de ejercicios comunes que se toman en entrev
 
 ## Enunciados
 
-1. Definir una función max() que tome como argumento dos números y 
-devuelva el mayor de ellos. 
-(Es cierto que python tiene una función max() incorporada, 
-pero hacerla nosotros mismos es un muy buen ejercicio.
+1. Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos. (Es cierto que python tiene una función max() incorporada, 
+pero hacerla por nosotros mismos es un muy buen ejercicio)
+
+```python
+def max(a:float,b:float):
+    return a if a>b else b
+```
+
 
 2. Definir una función max_de_tres(), que tome tres números como argumentos 
 y devuelva el mayor de ellos.
