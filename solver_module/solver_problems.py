@@ -105,3 +105,14 @@ class solve_problems:
         num = int(input('Ingrese el número de veces que se repetirá el carácter:'))
         char = input('Ingrese el carácter a repetir:')
         print(f'\nEl resultado de repetir {num} veces el carácter {char} es: {gen_n_caracteres(num,char)}\n')
+        
+    @beginner_decorator('PROBLEMA 9')
+    def problem_9():
+        from .function.func import gen_n_caracteres
+        try:
+            input_list = [int(x) for x in get_multiple_inputs()]
+        except Exception as e:
+            print(f'\nOcurrió el siguiente error ==> {e}\n')
+        else:
+            for element in input_list:
+                print(gen_n_caracteres(element,'*'))

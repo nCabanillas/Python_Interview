@@ -10,6 +10,7 @@ def switcher_function(case:int):
         6: solve_problems.problem_6,
         7: solve_problems.problem_7,
         8: solve_problems.problem_8,
+        9: solve_problems.problem_9,
     }
     return switch_dic.get(case, lambda: ' no hay esa opción')()
     
