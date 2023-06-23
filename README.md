@@ -39,7 +39,7 @@ def vowel_detector(letter: str):
 
 4. Escribir una función sum() y una función multi() que sumen y multipliquen respectivamente todos los números de una lista. Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multi([1,2,3,4]) debería devolver 24.
 
-````python
+```python
 def sum(*args:float):
     result = 0
     for arg in args:
@@ -51,12 +51,11 @@ def multi(*args:float):
     for arg in args:
         result *= arg
     return result
-
 ```
 
 5. Definir una función inversa() que calcule la inversión de una cadena. Por ejemplo la cadena "estoy probando" debería devolver la cadena "odnaborp yotse".
 
-````python
+```python
 def inverse(string: str):
     return string[::-1]
 
@@ -64,7 +63,7 @@ def inverse(string: str):
 
 6. Definir una función es_palindromo() que reconoce palíndromos (es decir, palabras que tienen el mismo aspecto escritas invertidas), ejemplo: es_palindromo ("radar") tendría que devolver True.
 
-````python
+```python
 def is_palindrome(string: str):
     return True if string == string[::-1] else False
 
@@ -72,7 +71,7 @@ def is_palindrome(string: str):
 
 7. Definir una función superposición() que tome dos listas y devuelva True si tienen al menos 1 miembro en común o devuelva False de lo contrario. Escribir la función usando el bucle for anidado.
 
-````python
+```python
 def superposition(string1: str,string2: str):
     for letter in string1:
         if letter in string2:
@@ -83,7 +82,7 @@ def superposition(string1: str,string2: str):
 
 8. Definir una función generar_n_caracteres() que tome un entero n y devuelva el carácter multiplicado por n. Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx".
 
-````python
+```python
 def gen_n_caracteres(num:int, string:str) -> str:
     return string * num
 
@@ -91,7 +90,7 @@ def gen_n_caracteres(num:int, string:str) -> str:
 
 9. Definir un histograma procedimiento() que tome una lista de números enteros e imprima un histograma en la pantalla. Ejemplo: procedimiento([4, 9, 7]) debería imprimir lo siguiente:
 
-````python
+```python
 def problem_9():
    from .function.func import gen_n_caracteres
    try:
