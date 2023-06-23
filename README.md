@@ -11,7 +11,7 @@ pero hacerla nosotros mismos es un muy buen ejercicio.
 2. Definir una función max_de_tres(), que tome tres números como argumentos 
 y devuelva el mayor de ellos.
 
-3. Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False.
+3. Escribir una función que tome un carácter alfabético y devuelva True si es una vocal, de lo contrario devuelve False.
 
 4. Escribir una función sum() y una función multip() que sumen y multipliquen respectivamente todos los números de una lista. Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
 

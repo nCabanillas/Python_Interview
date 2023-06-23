@@ -41,7 +41,7 @@ class solve_problems:
         except ValueError:
             print(f'\nEl valor ingresado debe ser un carácter')
         except Exception as e:
-            print(e)
+            print(f'\nOcurrió el siguiente error ==> {e}\n')
         else:
             if result == True:
                 print(f'{letter} es una vocal')
