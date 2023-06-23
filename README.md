@@ -11,9 +11,13 @@ def max(a:float,b:float):
     return a if a>b else b
 ```
 
-
 2. Definir una función max_de_tres(), que tome tres números como argumentos 
 y devuelva el mayor de ellos.
+
+```python
+   def max_de_tres(a:float,b:float,c:float):
+    return max(max(a,b),c)
+```
 
 3. Escribir una función que tome un carácter alfabético y devuelva True si es una vocal, de lo contrario devuelve False.
 
