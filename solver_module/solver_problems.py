@@ -116,3 +116,4 @@ class solve_problems:
         else:
             for element in input_list:
                 print(gen_n_caracteres(element,'*'))
+    
