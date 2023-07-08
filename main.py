@@ -1,6 +1,7 @@
 from solver_module.solver_problems import solve_problems
 
-def switcher_function(case:int):
+
+def switcher_function(option: int):
     switch_dic = {
         1: solve_problems.problem_1,
         2: solve_problems.problem_2,
@@ -12,8 +13,9 @@ def switcher_function(case:int):
         8: solve_problems.problem_8,
         9: solve_problems.problem_9,
     }
-    return switch_dic.get(case, lambda: ' no hay esa opción')()
-    
+    return switch_dic.get(option, lambda: ' no hay esa opción')()
+
+
 if __name__ == '__main__':
     try:
         case = int(input('Ingrese el número correspondiente al problema que desea resolver:'))
@@ -22,4 +24,4 @@ if __name__ == '__main__':
     except Exception as e:
         print(f'\nOcurrió el siguiente error ==> {e}\n')
     else:
-        switcher_function(case)    
+        switcher_function(case)

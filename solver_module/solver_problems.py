@@ -1,10 +1,11 @@
-from .function.func import beginner_decorator
-from .function.func import get_multiple_inputs
+from solver_module.function.func import beginner_decorator
+from solver_module.function.func import get_multiple_inputs
+
 
 class solve_problems:
     @beginner_decorator('PROBLEMA 1')
     def problem_1():
-        from .function.func import max
+        from solver_module.function.func import maximum
         try:
             a = float(input('Ingrese el primer valor:'))
             b = float(input('Ingrese el segundo valor:'))
@@ -12,29 +13,29 @@ class solve_problems:
             print(f'\nEl valor ingresado debería ser un número\n')
         else:
             print(f'Los valores ingresados son : {a} y {b}')
-            result = max(a,b)
+            result = maximum(a, b)
             print(f'\nEl mayor valor entre [{a},{b}] resulta: {result}\n')
-            return result        
+            return result
 
     @beginner_decorator('PROBLEMA 2')
     def problem_2():
-        from .function.func import max_de_tres
+        from solver_module.function.func import max_de_tres
         try:
             a = float(input('Ingrese el primer valor:'))
             b = float(input('Ingrese el segundo valor:'))
             c = float(input('Ingrese el tercer valor:'))
-        #except ValueError:
+        # except ValueError:
         #    print(f'\nEl valor ingresado debe ser un número\n')
         except Exception as e:
             print(f'\nOcurrió el siguiente error ==> {e}\n')
         else:
-            result = max_de_tres(a,b,c)
+            result = max_de_tres(a, b, c)
             print(f'\nEl mayor valor entre [{a},{b},{c}] resulta: {result}\n')
             return result
 
-    @beginner_decorator('PROBLEMA 3') 
+    @beginner_decorator('PROBLEMA 3')
     def problem_3():
-        from .function.func import vowel_detector
+        from solver_module.function.func import vowel_detector
         letter = input('Ingrese la letra para analizar:')
         try:
             result = vowel_detector(letter)
@@ -50,19 +51,19 @@ class solve_problems:
 
     @beginner_decorator('PROBLEMA 4')
     def problem_4():
-        from .function.func import sum
-        from .function.func import multi
+        from solver_module.function.func import adding
+        from solver_module.function.func import multi
         inputs = get_multiple_inputs()
         if len(inputs) == 0:
             print('\nNo se ingresaron valores\n')
             return None
-        print(f'\nLa suma de los valores {inputs} ingresados es: {sum(*inputs)}\n')
+        print(f'\nLa suma de los valores {inputs} ingresados es: {adding(*inputs)}\n')
         print(f'La multiplicación de los valores {inputs} ingresados es: {multi(*inputs)}\n')
 
     @beginner_decorator('PROBLEMA 5')
     def problem_5():
-        from .function.func import multi
-        from .function.func import inverse
+        from solver_module.function.func import multi
+        from solver_module.function.func import inverse
         word = input('Ingrese la palabra a invertir:')
         try:
             inverse_word = inverse(word)
@@ -89,23 +90,22 @@ class solve_problems:
         from .function.func import superposition
         # first way
         print('Ingrese los elementos de la primera lista:')
-        list1 = list(map(lambda x: int(x),get_multiple_inputs()))
+        list1 = list(map(lambda x: int(x), get_multiple_inputs()))
         # second way
         print('Ingrese los elementos de la segunda lista:')
-        list2 = get_multiple_inputs()   
+        list2 = get_multiple_inputs()
         list2 = [int(x) for x in list2]
         # getting the result
-        result = superposition(list1,list2)
+        result = superposition(list1, list2)
         print(f'\nLas listas {list1} y {list2} tienen elementos en común? Respuesta: {result}\n')
-        
 
     @beginner_decorator('PROBLEMA 8')
     def problem_8():
         from .function.func import gen_n_caracteres
         num = int(input('Ingrese el número de veces que se repetirá el carácter:'))
         char = input('Ingrese el carácter a repetir:')
-        print(f'\nEl resultado de repetir {num} veces el carácter {char} es: {gen_n_caracteres(num,char)}\n')
-        
+        print(f'\nEl resultado de repetir {num} veces el carácter {char} es: {gen_n_caracteres(num, char)}\n')
+
     @beginner_decorator('PROBLEMA 9')
     def problem_9():
         from .function.func import gen_n_caracteres
@@ -115,5 +115,4 @@ class solve_problems:
             print(f'\nOcurrió el siguiente error ==> {e}\n')
         else:
             for element in input_list:
-                print(gen_n_caracteres(element,'*'))
-    
+                print(gen_n_caracteres(element, '*'))

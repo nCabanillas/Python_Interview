@@ -37,10 +37,10 @@ def vowel_detector(letter: str):
         raise Exception('Solo se permite carácter alfabético')
 ```
 
-4. Escribir una función sum() y una función multi() que sumen y multipliquen respectivamente todos los números de una lista. Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multi([1,2,3,4]) debería devolver 24.
+4. Escribir una función adding() y una función multi() que sumen y multipliquen respectivamente todos los números de una lista. Por ejemplo: adding([1,2,3,4]) debería devolver 10 y multi([1,2,3,4]) debería devolver 24.
 
 ```python
-def sum(*args:float):
+def adding(*args:float):
     result = 0
     for arg in args:
         result += arg
